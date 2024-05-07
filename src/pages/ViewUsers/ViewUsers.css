@@ -1,0 +1,42 @@
+.view-users {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.view-users h2 {
+    margin-bottom: 20px;
+}
+
+.view-users table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.view-users th, .view-users td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.view-users th {
+    background-color: #f2f2f2;
+}
+
+.view-users .table-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.view-users button {
+    padding: 6px 12px;
+    margin-right: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.view-users button:last-child {
+    margin-left: 0;
+}

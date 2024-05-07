@@ -1,0 +1,95 @@
+
+
+.navbar {
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Position at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it appears above other content */
+    background-color: #343a40; /* Dark background color */
+    padding: 0.5rem 1rem; /* Padding for the navbar */
+    justify-content: space-between; /* Align items to the start and end */
+}
+
+.content {
+    margin-top: 56px; /* Adjust as needed based on the height of your navbar */
+}
+
+/* Navbar brand (Company Logo) */
+.navbar-brand {
+    color: #fff; /* White text color */
+    font-size: 1.5rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    padding-right: 1rem; /* Right padding */
+}
+
+/* Navbar items (links and text) */
+.navbar-nav .nav-link, .text-white {
+    color: #fff; /* White text color */
+    margin-right: 1rem; /* Right margin between items */
+}
+
+/* Messages button */
+.btn-outline-light {
+    color: #fff; /* White text color */
+    border-color: #fff; /* White border color */
+    margin-right: 1rem; /* Right margin */
+}
+
+/* Messages button hover effect */
+.btn-outline-light:hover {
+    background-color: #fff; /* White background color on hover */
+    color: #343a40; /* Dark text color on hover */
+}
+
+/* Logout button */
+.btn-outline-light:last-child {
+    margin-right: 0; /* No right margin for the last button */
+}
+
+/* Popover content */
+.popover {
+    max-width: 300px; /* Maximum width of the popover */
+}
+
+/* Popover header */
+.popover-header {
+    background-color: #343a40; /* Dark background color */
+    color: #fff; /* White text color */
+    font-weight: bold; /* Bold text */
+    border-bottom: none; /* No bottom border */
+}
+
+/* Popover body */
+.popover-body {
+    background-color: #fff; /* White background color */
+    color: #343a40; /* Dark text color */
+    padding: 0.5rem 1rem; /* Padding for the body */
+}
+
+/* Custom scrollbar for the popover body */
+.popover-body {
+    max-height: 200px; /* Maximum height for the popover body */
+    overflow-y: auto; /* Enable vertical scrollbar */
+    scrollbar-width: thin; /* Thin scrollbar */
+}
+
+/* Hide the scrollbar track */
+.popover-body::-webkit-scrollbar-track {
+    display: none; /* Hide the scrollbar track */
+}
+
+/* Custom scrollbar thumb */
+.popover-body::-webkit-scrollbar-thumb {
+    background-color: #888; /* Gray thumb color */
+    border-radius: 10px; /* Rounded thumb */
+}
+
+/* Custom scrollbar track */
+.popover-body::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+/* Custom scrollbar corner */
+.popover-body::-webkit-scrollbar-corner {
+    background-color: #343a40; /* Dark background color */
+}

@@ -1,0 +1,116 @@
+
+### Features:
+
+1. **Login**:
+   - Allows users to log in using a username and password.
+
+2. **Admin Dashboard**:
+   - View User: Allows admins to view and edit existing users.
+   - Add User: Provides a form to add new users.
+   - Training Module: Manages training modules, categories, groups, and displays graphs.
+
+3. **User Dashboard**:
+   - Calendar: Displays training schedules.
+   - Dashboard Summary: Shows status, learning time, number of badges, and points.
+   - Training CAD (Course of Action Document): Displays an image, title, and progress.
+
+4. **Trainer Dashboard**:
+   - Calendar: Displays trainer's schedule.
+   - Dashboard Summary: Shows modules managed, ability to add, view, and create new modules.
+
+5. **Views**:
+   - View Users: Allows admins to view and edit existing users.
+   - Add User: Provides a form for admins to add new users.
+
+6. **Insert Queries**:
+   - Add user: Backend logic for adding a new user.
+   - Training Module: Insert query for adding a new training module.
+
+7. **Update Queries**:
+   - Update user: Backend logic for editing an existing user.
+
+8. **New Module Page**:
+   - Allows trainers to create new training modules.
+   - Select from existing modules, add module contents, and video links.
+   - References user table to mark the creator as an instructor.
+
+9. **Documentation**:
+   - Write documentation explaining the system's features and how to use them.
+
+This plan outlines the key components and features of the ETMS application. Let me know if you need further clarification or assistance!
+
+
+Login{
+	username,
+	password
+}
+
+AdminDashboard{
+	View User, Add User, Training Module, Category, Group, Graph Component
+}
+
+User{
+    Calendar, 
+    trainingSchedule {
+            id: 1,
+            title: 'Training 1',
+            start: new Date(2024, 3, 1, 9, 0), // April 1st, 2024 at 9:00 AM
+            end: new Date(2024, 3, 1, 12, 0), // April 1st, 2024 at 12:00 PM
+        },
+
+    dashboard summary {
+        status, Learning Time, No of Badges, Points
+    }
+    training cad{
+        image url,
+        title,
+        progress
+    }
+}
+
+
+Trainer{
+    calendar,
+    course iamge,
+    Name, 
+
+    dashboard-summary{
+        My Modules
+        Add Module
+        New Module        
+    }
+                           
+}
+
+ViewUsers[
+    1. have to write the backend to edit an existing users as well as to update new users
+    2. backend logic for add user button
+]
+
+AddUser{
+    1. Add backend insert query
+}
+
+insert query for Training_Module {
+	id,
+	title,	
+	description,
+	daysAlloted
+}
+
+## Can also add a update query for training module
+
+
+NewModulePage{
+        moduleName= TrainingName --->> reference to Training_Module it needs to be drop down
+        ModuleContents([]);
+        NewContent('');
+        NewVideoLink('');
+
+        it should also refer to user table with role as Instructor to mark as created_by
+}
+NewContent('');
+NewVideoLink('');
+
+
+these two can be made as a separate table 

@@ -1,0 +1,38 @@
+.user-profile-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.user-details {
+    margin-top: 20px;
+}
+
+.user-details label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.user-details input,
+.user-details span {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.user-details button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.user-details button:hover {
+    background-color: #0056b3;
+}

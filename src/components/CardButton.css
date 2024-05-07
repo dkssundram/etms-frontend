@@ -1,0 +1,29 @@
+/* CardButton.css */
+
+.card-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 250px; /* Fixed width for each card */
+    text-align: center;
+    margin: 10px; /* Add margin for spacing between cards */
+}
+
+.card-button:hover {
+    background-color: #f0f0f0;
+}
+
+.value {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 16px; /* Adjust the font size as needed */
+}

@@ -1,0 +1,33 @@
+/* ScorePage.css */
+
+.table-container {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.empty-score {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.empty-score p {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+

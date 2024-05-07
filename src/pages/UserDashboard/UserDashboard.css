@@ -1,0 +1,112 @@
+/* UserDashboard.css */
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: 100%;
+    width: 250px; /* Adjust the width as needed */
+    padding-top: 0px; /* Height of the navbar */
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    transition: width 0.3s ease; /* Add transition for smooth width change */
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 60px); /* Height of the navbar */
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px;
+    overflow-x: hidden;
+    overflow-y: auto; 
+}
+
+.sidebar.collapsed {
+    width: 100px; /* Collapsed width */
+}
+
+.sidebar.collapsed .nav-link {
+    text-align: center;
+    padding: 10px 0;
+    overflow: hidden; /* Hide overflow to prevent text from showing */
+}
+
+/* Main content styles */
+.main-content {
+    margin-left: 300px; /* Sidebar width */
+    padding-top: 60px; /* Height of the navbar */
+    transition: margin-left 0.3s ease; /* Add transition for smooth margin-left change */
+}
+
+.main-content.collapsed {
+    margin-left: 100px;
+    
+    /* Collapsed sidebar width */
+}
+
+/* Toggle button styles */
+/* .toggle-button {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    z-index: 999;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+} */
+
+/* Active link styles */
+.nav-link.active {
+    font-weight: bolder;
+    color: #007bff;
+}
+
+.toggle-button {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    z-index: 999;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: black;
+    border-radius: 50%;
+    padding: 10px 10px;
+    /* border: none; */
+}
+
+.nav-link {
+    padding: 0.5rem 1rem;
+    color: #495057; /* Bootstrap gray */
+    font-weight: 500;
+    border-left: 3px solid transparent;
+}
+
+.nav-link:hover {
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none;
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.nav-link.active {
+    color: #007bff; /* Bootstrap primary color */
+    border-left-color: #007bff; /* Bootstrap primary color */
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Add padding to the right of the sidebar icon */
+.nav-link .sidebar-icon {
+    margin-right: 10px; /* Adjust the amount of space as needed */
+}
+
+
+

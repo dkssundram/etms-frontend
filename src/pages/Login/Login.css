@@ -1,0 +1,52 @@
+.body-login {
+    background-image: url('./vecteezy_studying-and-learning-online-concept_1270244.svg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 25rem;
+    margin-top: 10rem;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.alert {
+    margin-top: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    margin-top: 20px;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Optional: Add margin for spacing */
+}
+.login-button {
+    width: 100px; /* Set the desired width */
+}
+
+.forgot-password{
+    margin-top: 20px;
+}

@@ -1,0 +1,55 @@
+.new-module-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.new-module-page h2 {
+    margin-bottom: 20px;
+}
+
+.new-module-page label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.new-module-page input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.new-module-page ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.new-module-page li {
+    margin-bottom: 10px;
+}
+
+.new-module-page li button {
+    margin-left: 10px;
+}
+
+.add-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.add-content input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.add-content button {
+    padding: 8px 16px;
+}
+
+.footer{
+    position: sticky;
+}
+/* Optional: Add more styles as needed */
